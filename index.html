@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CliqDrop Documentation</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            scroll-behavior: smooth;
+            background: #fafafa;
+            color: #333;
+        }
+
+        /* NAVBAR CONTAINER */
+        .navbar {
+            width: 100%;
+            text-align: center;
+            background: #ffffff;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* LOGO */
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #111;
+        }
+
+        /* NAV LINKS */
+        .nav-links {
+            display: inline-flex;
+            gap: 30px;
+
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+            padding: 6px 10px;
+            border-radius: 6px;
+
+        }
+
+        .nav-links a:hover {
+            background: #007bff;
+            color: #fff;
+        }
+
+        /* section line  */
+
+        .sec-links {
+            display: inline-flex;
+            gap: 30px;
+        }
+
+        .sec-links a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #e9e4e4;
+            padding: 6px 10px;
+            background: #949292;
+            border-radius: 6px;
+        }
+
+        .sec-links a:hover {
+            background: #007bff;
+            color: #fff;
+        }
+
+        /* PAGE SECTIONS */
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 120px 30px 60px;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        section p {
+            line-height: 1.7;
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+        }
+
+        /* STEP BOX */
+        .step {
+            background: #fff;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .step h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #111;
+            text-align: left;
+        }
+
+        .step p {
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">CliqDrop Documentation</div>
+        <div class="nav-links">
+            <a href="#VisitWebsite">CliqDrop Website</a>
+            <a href="#Command">Command</a>
+            <a href="#Bot">Bot</a>
+            <a href="#UpComingFeature">UpComing Feature</a>
+        </div>
+    </div>
+
+    <br>
+
+    <br><br><br>
+    <section id="about-extension"
+        style="max-width:900px;margin:auto;padding:40px 20px;font-family:Arial, sans-serif;line-height:1.7;">
+
+        <h1 style="text-align:center;font-size:32px;margin-bottom:10px;">About CliqDrop Extension</h1>
+
+        <div class="step">
+            <h2 style="margin-top:40px;">What is CliqDrop?</h2>
+            <p>
+                CliqDrop is a lightweight and secure file-and-text sharing extension for Zoho Cliq.
+                It enables users to instantly send data across devices and between people using a simple
+                <strong>6-digit access code</strong>, without requiring login, authentication, or organization
+                restrictions.
+                Whether you want to move data between your own devices or share content with colleagues and friends,
+                CliqDrop makes the process fast, private, and reliable.
+            </p>
+        </div>
+
+        <div class="step">
+
+            <h2>⭐ Why You Should Use CliqDrop</h2>
+
+            <h3>1. Instant Cross-Device Sharing</h3>
+            <p>
+                Share content between mobile, desktop, laptop, office PC, or home PC — anywhere Cliq or a browser is
+                available.
+                No cables, no email, no sync needed.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>2. Share with Anyone (Not Only Cliq Users)</h3>
+            <p>
+                Users can retrieve data internally, externally, without contacts, or even without using Cliq (via
+                website).
+                All they need is the <strong>6-digit code</strong>.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>3. Secure and Temporary Storage</h3>
+            <p>
+                Only the unique 6-digit code can access data.
+                No permanent storage.
+                Auto-expiry and one-time-view options included.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>4. Lightweight, Fast & Reliable</h3>
+            <p>
+                Upload once — accessible instantly across all platforms.
+                Works fast for both individuals and teams.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>5. For Both Personal & Team Use</h3>
+            <p>Perfect for moving files, sharing notes, sending documents, or transferring data privately.</p>
+        </div>
+
+
+
+    </section>
+
+
+    <section id="storage-scenario"
+        style="max-width:900px;margin:auto;padding:40px 20px;font-family:Arial, sans-serif;line-height:1.7;">
+        <div class="step">
+            <h1 style="text-align:center;font-size:32px;margin-bottom:20px;">⭐ How CliqDrop Helps Companies Avoid
+                Unnecessary Database Storage (User Scenario Explanation)</h1>
+
+            <p>
+                Most people never think about this, but messaging apps store everything forever — even things that were
+                only
+                needed
+                for a few seconds. Let’s take a simple real-life example.
+            </p>
+
+
+            <hr style="margin:40px 0;">
+
+            <h2>📌 Scenario 1: Sharing a file from your phone → to your desktop</h2>
+            <p>
+                You are using a chat app to move a file from your mobile to your laptop.
+            </p>
+            <ul>
+                <li>You send the file to yourself</li>
+                <li>You download it on your desktop</li>
+                <li>Now you don’t need the file in chat anymore</li>
+            </ul>
+            <p>
+                But what happens? <br><br>
+                <b>You never delete the chat message</b>, and the file stays inside the company database forever, even
+                though you only
+                needed it once. <br><br>
+                Multiply this by thousands of employees → thousands of temporary files → huge unnecessary database load.
+            </p>
+
+            <hr style="margin:40px 0;">
+
+            <h2>📌 Scenario 2: Sharing something with a friend just one time</h2>
+            <p>
+                Imagine you are a CSE student and want to share some code or a screenshot with your friend.
+            </p>
+            <ul>
+                <li>You send it in the chat</li>
+                <li>Your friend receives it</li>
+                <li>Both of you stop using that message after 2–3 minutes</li>
+            </ul>
+            <p>
+                But it still remains stored permanently inside the chat database. <br><br>
+                This becomes unnecessary <b>long-term storage</b> for temporary sharing.
+            </p>
+
+            <hr style="margin:40px 0;">
+
+            <h2>📌 Scenario 3: Sharing notes or small files repeatedly</h2>
+            <p>Many users share:</p>
+            <ul>
+                <li>Assignments</li>
+                <li>Screenshots</li>
+                <li>Download links</li>
+                <li>Temporary documents</li>
+                <li>Credentials or quick notes</li>
+            </ul>
+            <p>
+                Once used, nobody deletes them, but they still sit permanently in company servers.
+            </p>
+
+            <hr style="margin:40px 0;">
+
+            <h2>🔥 How CliqDrop Fixes All These Problems</h2>
+            <p>
+                Instead of saving files and text inside the chat history, CliqDrop uses <b>temporary, code-based
+                    sharing</b>.
+            </p>
+
+            <h3>✔ Chat does NOT store the file or message</h3>
+            <p>Only a <b>6-digit code</b> is shared, not the actual data.</p>
+
+            <h3>✔ Content lives temporarily on the CliqDrop backend</h3>
+            <p>It automatically deletes after:</p>
+            <ul>
+                <li>First view</li>
+                <li>Or expiry time</li>
+            </ul>
+
+            <h3>✔ No long-term storage inside company servers</h3>
+            <p>Nothing stays forever unless necessary.</p>
+
+            <hr style="margin:40px 0;">
+
+            <h2>⭐ Result for the Company</h2>
+            <ul>
+                <li>✔ Huge reduction in database usage</li>
+                <li>✔ Faster backup and lower storage cost</li>
+                <li>✔ Better performance</li>
+                <li>✔ Lower risk</li>
+            </ul>
+
+            <hr style="margin:40px 0;">
+
+            <h2>⭐ Result for Users</h2>
+            <ul>
+                <li>✔ They can share quickly without worrying about cleanup</li>
+                <li>✔ Perfect for self transfers (Phone → PC → Laptop)</li>
+                <li>✔ Perfect for one-time share</li>
+                <li>✔ No need to store unnecessary files or messages</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- SECTION 1 - WEBSITE -->
+    <section id="VisitWebsite">
+        <h2>Share From Website → CliqDrop - Usage Guide</h2>
+        <p>Follow the step-by-step guide below.</p>
+
+        <!-- STEP 1 -->
+        <div class="step">
+            <h3>Step 1: Open Website</h3>
+            <p>Go to: <a href="https://cliqdrop.onrender.com" target="_blank">https://cliqdrop.onrender.com</a></p>
+            <img src="/Img/WebSite_home_page.png" />
+            <br><br>
+            <h3>Step 2: Upload or Enter Text</h3>
+            <p>Upload a file up to 50MB or enter your text.</p>
+            <img src="/Img/Website_file_select.png" />
+            <br><br>
+            <img src="/Img/Website_text_select.png" />
+            <br><br>
+            <h3>Step 3: Click Generate Code</h3>
+            <p>You will receive a 6-digit code (e.g., A9B2C4).</p>
+            <img src="/Img/website_code_generate.png" />
+            <br><br>
+            <h3>Step 4: Go to Get Section</h3>
+            <p><b>Retrieve or Download</b>
+                <br>
+                Enter a code and Click Get Details
+
+            </p>
+            <img src="/Img/website_get_section.png" />
+            <br><br>
+            <h3>Step 5: You get the result</h3>
+            <p>If code for file you will get file section preview and if text than you get text preview section</p>
+            <img src="/Img/Website_file_preview.png" />
+            <br><br>
+            <img src="/Img/Website_text_preview.png" />
+            <br><br>
+
+            <h3>Step 6: Now you have option to Copy text or download File and Text File also </h3>
+            <p>Click on copy or Download File Button.</p>
+            <img src="/Img/Website_file_download.png" />
+            <br><br>
+            <img src="/Img/Website_text_copy.png" />
+            <br><br>
+            <img src="/Img/Website_text_download.png" />
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 2 - COMMAND -->
+    <section id="Command">
+        <h2>Commands - Usage Guide</h2>
+        <p>Use these simple steps to retrieve shared data using commands.</p>
+
+        <div class="sec-links">
+            <a href="#share-command">Share command</a>
+            <a href="#get-command">Get Command</a>
+            <a href="#download-command">Download Command</a>
+        </div>
+
+        <section id="share-command">
+            <h2>Share Commands - Usage Guide</h2>
+            <p>Use these simple steps to shared data using commands.</p>
+            <div class="step">
+                <h3>Step 1: Type /share or /share -t or /share -T Command</h3>
+                <p>Above all three command Used for share text only not file.<br>Open chat and type the command to share
+                    text.</p>
+                <img src="/Img/Cliq_share_command.png" />
+            </div>
+
+            <div class="step">
+                <h3>Step 2: You get a Form tab </h3>
+                <p>Enter your text and set some properties if you want and Click Generate Text Code.</p>
+                <img src="/Img/Cliq_text_from.png" />
+            </div>
+
+            <div class="step">
+                <h3>Step 3: You will get Code with success message.</h3>
+                <p>Now Copy Code and share With any one to get those Text</p>
+                <img src="/Img/cliq_text_generate_code.png" />
+            </div>
+        </section>
+
+        <section id="get-command">
+            <h2>get Commands - Usage Guide</h2>
+            <p>Use these simple steps to retrieve data using commands.</p>
+            <div class="step">
+                <h3>Step 1: Type /get CODE Command</h3>
+                <p>Enter the Command You get message From Bot based on Data type.<br>If Code have Text Data Than You get
+                    Text with success message. </p>
+                <img src="/Img/cliq_get_command.png" />
+                <img src="/Img/cliq_get_text_msg.png" />
+                <img src="/Img/cliq_get_text_msg2.png" />
+
+                <br><br>
+                <p><b>If You Data is File You get File details as result with download button.</b></p>
+                <img src="/Img/cliq_get_file_msg.png" />
+                <br><br>
+                <p><b>When You Click download button.</b></p>
+                <img src="/Img/cliq_get_file_download.png" />
+            </div>
+        </section>
+
+
+        <section id="download-command">
+            <h2>download Commands - Usage Guide</h2>
+            <p>Use these simple steps to retrieve shared data using commands.</p>
+            <div class="step">
+                <h3>Step 1: Type /download <b>CODE</b> Command</h3>
+                <img src="/Img/cliq_download_command.png" />
+                <br><br>
+                <p><b>You will get success message with a download Link.</b></p>
+                <img src="/Img/cliq_download_msg.png" />
+                <br><br>
+                <p><b>When You click link you with download file through browser</b></p>
+                <img src="/Img/Cliq_download_link_click_msg.png" />
+            </div>
+        </section>
+    </section>
+
+
+    <!-- SECTION 3 - BOT -->
+    <section id="Bot">
+        <h2>Bot - Usage Guide</h2>
+
+        <div class="step">
+            <h3>Open CliqDrop Bot</h3>
+            <p>You will get bot welcome message and explore bot. we will add more feature soon</p>
+            <img src="/Img/cliq_bot.png" />
+        </div>
+    </section>
+
+
+
+
+    <!-- SECTION 5 - UPCOMING -->
+    <section id="UpComingFeature">
+        <h2>UpComing Features</h2>
+
+        <div class="step">
+        <section id="upcoming-features" style="max-width:900px;margin:auto;padding:40px 20px;font-family:Arial, sans-serif;line-height:1.8;">
+
+    <h1 style="text-align:center;font-size:34px;margin-bottom:20px;">🚀 Upcoming Features in CliqDrop</h1>
+
+    <p>
+        We are continuously improving CliqDrop to make cross-device and cross-user sharing even smoother, more secure, and more powerful.
+        Below are some exciting features that are currently being developed.
+    </p>
+
+    <hr style="margin:40px 0;">
+
+    <!-- Feature 1 -->
+    <h2>🔐 1. Password-Protected Code Sharing</h2>
+
+    <p>Right now, anyone with the 6-digit code can access shared content. In the upcoming update, users will be able to add a <b>password</b> to their shares.</p>
+
+    <h3>How it will work:</h3>
+    <ol>
+        <li>User shares text/file → generates code</li>
+        <li>User sets an optional password</li>
+        <li>Receiver enters the code</li>
+        <li>System asks for the password</li>
+        <li>Only correct password unlocks the content</li>
+    </ol>
+
+    <h3>Benefits:</h3>
+    <ul>
+        <li>Extra layer of privacy</li>
+        <li>Perfect for sharing sensitive notes or credentials</li>
+        <li>Even if someone accidentally gets the code, they cannot access the data</li>
+    </ul>
+
+    <hr style="margin:40px 0;">
+
+    <!-- Feature 2 -->
+    <h2>🌐 2. IP-Restricted Access (Enterprise Feature)</h2>
+
+    <p>For companies that want internal sharing only, we will allow IP-based restrictions.</p>
+
+    <h3>How it will work:</h3>
+    <ul>
+        <li>Company sets approved IP ranges</li>
+        <li>Only users inside that network can access the shared content</li>
+        <li>No external IPs can retrieve data even if they know the code</li>
+    </ul>
+
+    <h3>Benefits for Organizations:</h3>
+    <ul>
+        <li>Highly secure internal data exchange</li>
+        <li>Perfect for office networks, intranets, secure departments</li>
+        <li>Prevents outside access and maintains compliance</li>
+    </ul>
+
+    <hr style="margin:40px 0;">
+
+    <!-- Feature 3 -->
+    <h2>📲 3. Mobile App Integration (Android & iOS)</h2>
+
+    <p>We are developing full mobile apps for seamless sharing. The app will support:</p>
+
+    <ul>
+        <li>Text & file sharing</li>
+        <li>Auto-copy received content</li>
+        <li>Code generator & scanner</li>
+        <li>Notifications when someone accesses your shared content</li>
+    </ul>
+
+    <h3>Benefits:</h3>
+    <ul>
+        <li>True cross-device mobility</li>
+        <li>Share from phone to laptop in seconds</li>
+        <li>No need to open website every time</li>
+    </ul>
+
+    <hr style="margin:40px 0;">
+
+    <!-- Feature 4 -->
+    <h2>🔄 4. One-Tap Device Sync Mode (Phone ↔ Desktop)</h2>
+
+    <p>A new feature specifically designed for <b>self-transfer between your own devices</b>.</p>
+
+    <h3>How it will work:</h3>
+    <ul>
+        <li>User opens “Device Sync Mode” on two devices</li>
+        <li>Both devices connect via 6-digit pairing code</li>
+        <li>Once paired → instant transfer between them</li>
+        <li>Works without staying logged in</li>
+    </ul>
+
+    <h3>Benefits:</h3>
+    <ul>
+        <li>Perfect for phone-to-PC transfers</li>
+        <li>No chat history, no cloud storage</li>
+        <li>Clean, temporary, secure</li>
+    </ul>
+
+    <hr style="margin:40px 0;">
+
+    <!-- Feature 5 -->
+    <h2>📋 5. Universal Clipboard Sync (Copy–Paste Across Devices)</h2>
+
+    <p>A powerful productivity feature similar to Apple’s Universal Clipboard — but for everyone.</p>
+
+    <h3>How it will work:</h3>
+    <ul>
+        <li>User copies anything on device A</li>
+        <li>CliqDrop detects clipboard change</li>
+        <li>Shows popup: <b>“Share clipboard with CliqDrop?”</b></li>
+        <li>When shared → device B instantly receives it</li>
+        <li>Text, links, and small files supported</li>
+    </ul>
+
+    <h3>Benefits:</h3>
+    <ul>
+        <li>Fastest way to move content between systems</li>
+        <li>No sending messages</li>
+        <li>No uploading or downloading</li>
+        <li>Works on any OS (Windows, Linux, macOS, Android, iOS)</li>
+    </ul>
+
+    <hr style="margin:40px 0;">
+
+    <!-- Feature 6 -->
+    <h2>💼 6. Private Workspace for Team or Company Sharing</h2>
+
+    <p>A secure team-based environment where:</p>
+    <ul>
+        <li>Employees can share using codes</li>
+        <li>All access stays inside the organization</li>
+        <li>Admins can enable:</li>
+        <ul>
+            <li>Expiry rules</li>
+            <li>Download limits</li>
+            <li>IP restriction</li>
+            <li>Auto-delete policies</li>
+        </ul>
+    </ul>
+
+    <h3>Benefits:</h3>
+    <ul>
+        <li>Teams can exchange files without consuming chat storage</li>
+        <li>Eliminates unnecessary message history</li>
+        <li>Perfect for IT teams, development teams, HR, design, etc.</li>
+    </ul>
+
+    <hr style="margin:40px 0;">
+
+    <!-- Summary -->
+    <h2>🌟 Why These Features Matter</h2>
+
+    <p>
+        These upcoming features make CliqDrop not just a temporary file-sharing solution… 
+        but a <b>full cross-device, cross-platform, secure data transfer ecosystem</b>.
+    </p>
+
+    <h3>Users get:</h3>
+    <ul>
+        <li>✔ Faster sharing</li>
+        <li>✔ More privacy</li>
+        <li>✔ Seamless device integration</li>
+    </ul>
+
+    <h3>Companies get:</h3>
+    <ul>
+        <li>✔ Lower database usage</li>
+        <li>✔ Lower message storage cost</li>
+        <li>✔ Higher security</li>
+        <li>✔ No chat clutter</li>
+    </ul>
+
+</section>
+     
+        
+        </div>
+
+        <div class="divider"></div>
+    </section>
+
+</body>
+
+</html>
